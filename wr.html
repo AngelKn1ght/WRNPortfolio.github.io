@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRN Portflio</title>
+    <link rel="stylesheet" href="PortfolioCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo" WRN><span>WRN</span> Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="port-img/home-img-2.png" alt="" class="im">
+            <br></br>
+              <br></br>
+                <br></br>
+                  <br></br>
+    <img src="port-img/WRN!.jpg" alt="" class="im">
+
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Effect of <span>W<span style="color: orange;">R</span></span><span style="color: #FF5733;">N</span> Course on me</h2>
+            <p id="fullText">The Work-Based Learning course stands as a pivotal milestone in my educational and professional journey, significantly shaping my understanding of the intricacies between theory and practice. This immersive course provided a rich tapestry of experiences, encompassing internships, simulations, and real-world projects, offering a comprehensive platform to cultivate and harness essential skills while delving into diverse facets of my chosen field.
+                <span id="dots">...</span><span id="more" style="display: none;"> The diverse array of work exposure opportunities embedded within this course served as catalysts for multifaceted skill development. Engaging in real-world scenarios allowed me to navigate complexities, fostering resilience, adaptability, and an acute problem-solving acumen. Each experience, whether it was through simulations or actual placements, intricately contributed to the honing of my communication prowess, refining my ability to articulate ideas effectively within diverse professional settings. Moreover, the collaborative dynamics of team-based projects unveiled the art of effective teamwork, emphasizing the significance of cooperation and collective effort in achieving shared objectives.
+
+                Reflecting on these experiences reveals a profound evolution in my skill set. The simulated project management exercises acted as crucibles, refining my organizational aptitude and instilling a methodical approach to tasks. Conversely, the hands-on involvement during internships provided a tangible understanding of industry-specific tools and methodologies, enriching my technical expertise in ways that classroom teachings could not replicate. This amalgamation of practical engagements culminated into a cohesive body of work experience, unveiling a diverse yet interconnected narrative that defines my professional journey.
+
+                <span style="color: orange;">However, beyond merely augmenting my skills and broadening my work portfolio, the Work-Based Learning course has been instrumental in elucidating my career trajectory. The exposure to multifaceted projects allowed me to discern nuanced passions and aptitudes, ultimately guiding my aspirations toward a specialized domain within my field. A particularly impactful project in innovation not only ignited my fervor for cutting-edge advancements but also elucidated a career path I had previously overlooked.
+
+                As I stand at the threshold of my professional career, the insights gleaned from the Work-Based Learning course resonate as guiding beacons, illuminating a path that intertwines theoretical foundations with practical applications. The amalgamation of experiences has not only fortified my skill set but has also elucidated a clarity of purpose, directing my ambitions toward a specialized niche within my field. This course stands as a testament to the paramount importance of experiential learning, solidifying my commitment to lifelong learning, growth, and the unwavering pursuit of excellence within my chosen career path.</span></span></p>
+
+            <button onclick="toggleReadMore()" id="myBtn" class="btn">Read more</button>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Joseph Elzein | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="port-JS.js"></script>
+    <script>
+        function toggleReadMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
